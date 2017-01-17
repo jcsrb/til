@@ -7,6 +7,6 @@ date -d "today" +"%Y%m%d%H%M"
 then using it 
 
 ```
-mysqldump -u root -p mydb | gzip > mydb_$(date -d "today" +"%Y%m%d%H%M").sql.gzip
+mysqldump -u root -p mydb | gzip > mydb_$(date -d "today" +"%Y%m%d%H%M").sql.gz
 ```
 generates `mydb_201701172218.sql.gzip`
