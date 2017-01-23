@@ -27,5 +27,8 @@ or use `nc`
 nc -v redis.mydomain.com 6379
 ```
 
+or even telnet 
 
-
+```
+telnet redis.mydomain.com 6379
+```
