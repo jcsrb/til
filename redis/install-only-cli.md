@@ -15,7 +15,7 @@ make
 sudo cp src/redis-cli /usr/local/bin/
 ```
 
-or if you have docker, get the docker image nd run redis-cli from there
+or if you have docker, get the docker image and run redis-cli from there
 
 ```
 docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379
