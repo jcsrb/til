@@ -1,6 +1,6 @@
 # Shorthand for bash arguments
 
-you can use brachets to mark a argument shorthand `common-{a,b}`
+you can use brackets to mark a argument shorthand `common-{a,b}`
 
 ### example:
 
