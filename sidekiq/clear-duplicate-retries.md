@@ -1,4 +1,4 @@
-# Clear duplicated jobs retries from the Sidekiq retry Queue
+# Clear duplicate jobs retries from the Sidekiq retry Queue
 
 ```ruby
 query = Sidekiq::RetrySet.new
