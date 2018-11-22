@@ -2,7 +2,7 @@
 
 
 ```ruby
-  ActiveRecord::Base.connection.tables.each do |table|
+ActiveRecord::Base.connection.tables.each do |table|
   indexes = ActiveRecord::Base.connection.indexes(table)
   if indexes.length > 0
     puts "====>  #{table} <===="
