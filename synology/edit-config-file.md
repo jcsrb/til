@@ -3,8 +3,10 @@
 * enable ssh
 * log in via ssh
 
-
 ```sh
+# become root
+sudo su
+
 # make backups
 cp /usr/syno/etc.defaults/scemd.xml /usr/syno/etc.defaults/scemd.xml.bak
 cp /usr/syno/etc/scemd.xml /usr/syno/etc/scemd.xml.bak
