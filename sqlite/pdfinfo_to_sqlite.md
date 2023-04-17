@@ -76,4 +76,6 @@ ruby pdf_info_to_sqlite.rb /path/to/folder_with_pdfs /path/to/sqlite_database.db
 Replace /path/to/folder_with_pdfs with the path to the folder containing the PDFs and /path/to/sqlite_database.db with the path to the SQLite database you want to store the results in. If you don't provide these paths, the script will use the current directory for PDFs and create an SQLite database named pdf_info.sqlite3 in the current directory.
 
 
-^ this was generated with GPT4 prompt `create a ruby script that will run pdf info on all pdfs ina folder and write the results into sqlite` and edited by a human to work
+^ this was generated with GPT4 prompt:
+* `create a ruby script that will run pdf info on all pdfs ina folder and write the results into sqlite` 
+* and edited by a human to work
