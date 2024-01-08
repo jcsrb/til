@@ -8,6 +8,7 @@ thisisunsafe
 in to the warning screen and it will continue
 
 (tested Chome 68)
+(tested again Chrome 120 still works)
 
 do not do this if it is not your own website, certificates exist for a reason 
 
