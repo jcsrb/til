@@ -1,12 +1,17 @@
 # Fix and translate subtitles with ASR + LLMs
 
-Downloaded `.srt` files are often for a different release: out of sync, drifting (25 vs 23.976 fps), or even for the wrong episode.
-Transcribing the audio first fixes all of that, and the same subtitle text can then be translated with an LLM.
+*As of September 2026. Model names and prices move fast.*
+
+I had an older TV series with English subtitles only, some of them badly out of sync, and wanted German and Romanian ones as well.
+Subtitles are often made for a different release or cut of the same video: offset, drifting (25 vs 23.976 fps), or even for the wrong episode.
+Transcribing the audio first fixes all of that, and the corrected text can then be translated with an LLM, keeping the timings.
+The result: ~110 episodes retimed and translated into two languages within a day, for about $10, and the subtitles hold up while watching.
 
 ## 1. Transcribe with word timestamps
 
 * extract one mono 16 kHz audio track, Opus at 32k is plenty (~11 MB per 45 min episode)
-* MacWhisper Pro ships a CLI; Parakeet v2 does 45 min of audio in ~30 s on an M3 Max
+* MacWhisper Pro (paid) ships a CLI; Parakeet v2 does 45 min of audio in ~30 s on an M3 Max
+* free alternatives with word timestamps: [parakeet-mlx](https://github.com/senstella/parakeet-mlx), [WhisperKit](https://github.com/argmaxinc/WhisperKit), whisper.cpp
 
 ```sh
 ffmpeg -i episode.mkv -map 0:a:1 -ac 1 -ar 16000 -c:a libopus -b:a 32k episode.opus
@@ -65,6 +70,8 @@ For Romanian the register line becomes: natural spoken Romanian with full diacri
 Parse the reply with `^\s*\[(\d+)\]\s?(.*)$`, turn `<br>` back into newlines, and reject the batch if any number is missing or empty.
 
 ## Model notes (EN → DE / RO, TV dialogue)
+
+Based on a 38-line sample through every model plus one full episode side by side, judged by a native speaker of both languages. An impression, not a benchmark.
 
 | model | verdict |
 |---|---|
