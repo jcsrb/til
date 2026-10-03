@@ -21,7 +21,9 @@ text.tr("ŞşŢţ", "ȘșȚț")   # "Şi ţara, în ştiri" → "Și țara, în 
 
 ## `ºi` and `þara`: the Windows 98 classic
 
-Romanian text saved in Windows-1250 and shown as Windows-1252 turns `Şi ţara, în ştiri` into `ªi þara, în ºtiri`. Anyone who watched films with Romanian subtitles on Windows 98 has seen `ºi`. Fix it by re-decoding, not by stripping the diacritics:
+Romanian text saved in Windows-1250 and shown as Windows-1252 turns `Şi ţara, în ştiri` into `ªi þara, în ºtiri`. Anyone who watched films with Romanian subtitles on Windows 98 has seen `ºi`. Back then the fix was in the player, not the file: set the subtitle code page to Central European (Windows-1250), e.g. in VLC under Preferences → Subtitles / OSD → Default encoding. The tempting "fix" of opening the file in Notepad and replacing the broken letters with plain `s` and `t` throws the diacritics away for good.
+
+To fix the file itself, re-decode it:
 
 ```ruby
 "ªi þara, în ºtiri".encode("Windows-1252").force_encoding("Windows-1250").encode("UTF-8")
