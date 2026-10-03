@@ -1,6 +1,6 @@
 # How to clear Chrome's Internal DNS Cache
 
-for varios reasons chrome keeps a internal dns cache, to clear this visit this page in chrome
+for various reasons Chrome keeps an internal dns cache, to clear this visit this page in chrome
  
 ```
 chrome://net-internals/#dns

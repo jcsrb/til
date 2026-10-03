@@ -3,7 +3,7 @@
 use `toTimestamp(now())`, 
 where `now()` creates a *timeuuid* which you can convert to a timestamp
 
-### Examnple
+### Example
 
 ```SQL
 CREATE TABLE IF NOT EXISTS users (

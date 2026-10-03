@@ -1,4 +1,4 @@
-# Group records by a range of a timpestamp , week, month, day 
+# Group records by a range of a timestamp, week, month, day 
 
 
 ```ruby

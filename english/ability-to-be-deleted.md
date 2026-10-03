@@ -1,6 +1,6 @@
 #Q: What is the word for the ability to be deleted?
 
-A: `delible`, although `deletable` is also accetable 
+A: `delible`, although `deletable` is also acceptable 
 
 More:
 * http://www.thefreedictionary.com/delible

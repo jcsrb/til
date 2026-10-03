@@ -17,7 +17,7 @@ end
 
 if you are in a rails context add to the gemfile
 ```ruby
-group :developement
+group :development
   gem 'rb-readline'
 end
 ```

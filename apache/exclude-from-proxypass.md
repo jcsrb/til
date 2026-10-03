@@ -1,4 +1,4 @@
-#Exlude a path from apache proxypass
+# Exclude a path from apache proxypass
 
 ```
 ProxyPass /my/excluded/path !

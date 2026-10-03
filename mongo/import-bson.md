@@ -5,7 +5,7 @@ basics:
 mongorestore -d db_name -c collection_name path/file.bson
 ```
 
-Incase only for a single collection. Try this:
+In case only for a single collection. Try this:
 
 ```
 mongorestore --drop -d db_name -c collection_name path/file.bson

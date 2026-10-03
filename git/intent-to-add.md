@@ -1,6 +1,6 @@
 # Intent to Add 
 
-if you like `git add -p` but are annoyed that you cant go throw untracked files this will help:
+if you like `git add -p` but are annoyed that you can't go through untracked files this will help:
 ```Bash
 git add --intent-to-add my-untracked-file.md
 # or short

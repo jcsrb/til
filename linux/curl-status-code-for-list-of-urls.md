@@ -1,4 +1,4 @@
-# Check the status code of a list of urls with paralel calls
+# Check the status code of a list of urls with parallel calls
 
 ```bash
 xargs -n1 -P 10 curl -o /dev/null --silent --head --write-out '%{url_effective}: %{http_code}\n' < url.lst

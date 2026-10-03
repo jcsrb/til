@@ -1,4 +1,4 @@
-# Quicky get CSV data into rails consle by pasting
+# Quickly get CSV data into rails console by pasting
 
 ```ruby
 require 'csv'

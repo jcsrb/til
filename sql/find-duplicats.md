@@ -1,5 +1,5 @@
 # Find Duplicate Rows based on multiple columns
-and display also the ids as a colleciton
+and display also the ids as a collection
 
 PG:
 ```SQL

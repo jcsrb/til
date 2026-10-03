@@ -1,4 +1,4 @@
-# Groupm by HOST part of URL
+# Group by HOST part of URL
 
 To group by the hostname of URLs and count them in PostgreSQL, you can use the REGEXP_REPLACE function along with GROUP BY and COUNT. Here’s a query to achieve that:
 
